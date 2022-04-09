@@ -4,6 +4,7 @@ import rxwriter.drug.database.DrugDatabase;
 import rxwriter.drug.database.DrugRecord;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class DrugService {
@@ -14,7 +15,9 @@ public class DrugService {
                     "and at least two characters.  String provided: [" + startsWith + "]");
         }
         List<DrugRecord> records = new DrugDatabase().findDrugsStartingWith(startsWith);
-        return convertRecords(records);
+        List<DispensableDrug> matchedDrugs = convertRecords(records);
+        matchedDrugs.sort(Comparator.comparing(DispensableDrug::drugName));
+        return matchedDrugs;
     }
 
     private List<DispensableDrug> convertRecords(List<DrugRecord> records) {
