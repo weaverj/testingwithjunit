@@ -32,8 +32,8 @@ public enum DrugClassification {
     }
 
     public static DrugClassification getClassificationByCode(int therapeuticCode) {
-        return Arrays.stream(DrugClassification.values()).findFirst()
-                .filter(c -> c.getClassificationCode() == therapeuticCode).orElse(null);
+        return Arrays.stream(DrugClassification.values()).filter(c -> c.getClassificationCode() == therapeuticCode)
+                .findFirst().orElse(null);
     }
 
 }
