@@ -11,8 +11,9 @@ import java.util.List;
 public class DrugService {
 
     private DrugSource drugSource;
-    public DrugService(DrugSource source) {
-        this.drugSource = source;
+
+    public DrugService(DrugSource drugSource) {
+        this.drugSource = drugSource;
     }
 
     public List<DispensableDrug> findDrugsStartingWith(String startsWith) {
