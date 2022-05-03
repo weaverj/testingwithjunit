@@ -1,7 +1,6 @@
 package rxwriter.drug;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import rxwriter.drug.database.DrugRecord;
 import rxwriter.drug.database.DrugSource;
 
