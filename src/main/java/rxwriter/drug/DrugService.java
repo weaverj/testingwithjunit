@@ -17,7 +17,7 @@ public class DrugService {
     }
 
     public List<DispensableDrug> findDrugsStartingWith(String startsWith) {
-        if (startsWith == null || startsWith.isBlank() || startsWith.trim().length() <2) {
+        if (startsWith == null || startsWith.isBlank()) {
             throw new IllegalArgumentException("Starts with string must be non-null, non-blank, " +
                     "and at least two characters.  String provided: [" + startsWith + "]");
         }
