@@ -35,7 +35,7 @@ jobs:
       with:
         name: JUnit Tests # Name of the check run
         path: '**/target/surefire-reports/*.xml' 
-        reporter: junit 
+        reporter: java-junit 
           
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
