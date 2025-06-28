@@ -1,5 +1,5 @@
 # Testing with JUnit
-This is the example codebase for the Pluralsight course: Java SE 17 Unit Testing With JUnit.  It is a medication prescription writing domain example.
+This is the example codebase for the Pluralsight course: Java SE 17 Unit Testing With JUnit.  It is a medication prescription writing domain example..
 
 ## Prerequisites / Requirements
 
